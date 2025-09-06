@@ -94,7 +94,7 @@ local titleText = Instance.new("TextLabel")
 titleText.Size = UDim2.new(1, -70, 1, 0)
 titleText.Position = UDim2.new(0, 20, 0, 0)
 titleText.BackgroundTransparency = 1
-titleText.Text = "⚡ Ultimate Hub v2.0"
+titleText.Text = "⚡ LENIRRA_ZONE Hub v2.0"
 titleText.TextColor3 = Color3.fromRGB(255, 255, 255)
 titleText.TextSize = 22
 titleText.TextXAlignment = Enum.TextXAlignment.Left
@@ -825,7 +825,7 @@ local creditsText = Instance.new("TextLabel")
 creditsText.Size = UDim2.new(1, -20, 1, -40)
 creditsText.Position = UDim2.new(0, 10, 0, 35)
 creditsText.BackgroundTransparency = 1
-creditsText.Text = [[Ultimate Hub v2.0 - Advanced Multi-Tool
+creditsText.Text = [[LNR_Ultimate Hub v2.0 - Advanced Multi-Tool
 Created by: Anonymous Developer
 Features: Fly, Noclip, Speed, Jump, ESP, Teleport, 
 Waypoints, Auto Farm, Anti-Detection & More!
@@ -1630,7 +1630,7 @@ end
 setreadonly(oldMetatable, true)
 
 -- Initialize
-print("✅ Ultimate Hub v2.0 Loaded Successfully!")
+print("✅ LNR_Ultimate Hub v2.0 Loaded Successfully!")
 print("📋 Press F to open GUI")
 print("🚀 Features Loaded:")
 print("   • Advanced Fly System")
