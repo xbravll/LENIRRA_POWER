@@ -902,7 +902,7 @@ function startFly()
     rootPart.Anchored = false
     humanoid.PlatformStand = true
     
-    local speed = tonumber(speedBox.Text) or 25
+    local speed = tonumber(speedBox.Text) or 200
     
     flyConnection = RunService.Heartbeat:Connect(function()
         if not flyEnabled then return end
@@ -1016,13 +1016,13 @@ function toggleSpeed(state)
     
     if state then
         originalWalkSpeed = humanoid.WalkSpeed
-        customSpeed = tonumber(speedHackBox.Text) or 50
+        customSpeed = tonumber(speedHackBox.Text) or 100
         humanoid.WalkSpeed = customSpeed
         speedHackStatus.Text = "Status: ON | Speed: " .. customSpeed
         speedHackStatus.TextColor3 = Color3.fromRGB(70, 255, 70)
     else
         humanoid.WalkSpeed = originalWalkSpeed
-        speedHackStatus.Text = "Status: OFF | Speed: " .. (speedHackBox.Text or "50")
+        speedHackStatus.Text = "Status: OFF | Speed: " .. (speedHackBox.Text or "100")
         speedHackStatus.TextColor3 = Color3.fromRGB(170, 170, 170)
     end
 end
@@ -1653,3 +1653,4 @@ print("🎮 Use responsibly and have fun!")
 -- Auto-show GUI on first load
 wait(2)
 toggleGUI()
+
